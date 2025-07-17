@@ -1,7 +1,5 @@
 package org.example.lessons.week01;
 
-// Enable preview features
-@SuppressWarnings("preview")
 /**
  * 🚀 ЗАНЯТИЕ 1: JVM И ПЕРВАЯ ПРОГРАММА
  * 
@@ -102,7 +100,7 @@ public class Lesson01_JVM_Basics {
 //         ЗАДАНИЕ 1: Выведи информацию о себе
 //         Создай переменные с твоим именем, возрастом и любимым языком программирования
         
-        String myName = "твое_имя";
+        String myName = "Иван Гжибовский";
         int myAge = 23;
         String favoriteLang = "Java";
 
@@ -113,18 +111,15 @@ public class Lesson01_JVM_Basics {
         // ЗАДАНИЕ 2: Создай ASCII арт
         // Выведи свои инициалы или простой рисунок используя символы
         
-        /*
         System.out.println("  *** ");
         System.out.println(" *   *");
         System.out.println("*     *");
         System.out.println(" *   *");
         System.out.println("  *** ");
-        */
-        
+
         // ЗАДАНИЕ 3: Поэкспериментируй с printf
         // Используй различные спецификаторы формата
         
-        /*
         String product = "Java книга";
         double price = 1299.99;
         int quantity = 3;
@@ -133,7 +128,6 @@ public class Lesson01_JVM_Basics {
         System.out.printf("Цена: %.2f руб%n", price);
         System.out.printf("Количество: %d шт%n", quantity);
         System.out.printf("Итого: %.2f руб%n", price * quantity);
-        */
     }
 }
 
@@ -171,4 +165,4 @@ public class Lesson01_JVM_Basics {
 - Не бойся экспериментировать!
 
 Готов к следующему занятию? Переходи к Lesson02_Variables! 🚀
-*/ 
+*/

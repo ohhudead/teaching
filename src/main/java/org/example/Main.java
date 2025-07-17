@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.lessons.week01.Lesson02_Variables;
 import org.example.test.TestClass;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or

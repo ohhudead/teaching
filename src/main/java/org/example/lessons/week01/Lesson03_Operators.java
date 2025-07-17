@@ -37,7 +37,9 @@ public class Lesson03_Operators {
         
         // 🎯 7. ПРАКТИЧЕСКИЕ ЗАДАНИЯ
         practiceOperators();
-    }
+
+        }
+
     
     /**
      * 🔢 АРИФМЕТИЧЕСКИЕ ОПЕРАТОРЫ
@@ -72,17 +74,18 @@ public class Lesson03_Operators {
         int x = 10;
         System.out.println("Начальное значение x = " + x);
         
-        x += 5;  // x = x + 5
-        System.out.println("x += 5 => x = " + x);
+        x += 7;  // x = x + 7
+
+        System.out.println("x += 7 => x = " + x);
         
         x -= 3;  // x = x - 3
         System.out.println("x -= 3 => x = " + x);
         
-        x *= 2;  // x = x * 2
-        System.out.println("x *= 2 => x = " + x);
+        x *= 5;  // x = x * 5
+        System.out.println("x *= 5 => x = " + x);
         
-        x /= 4;  // x = x / 4
-        System.out.println("x /= 4 => x = " + x);
+        x /= 5;  // x = x / 5
+        System.out.println("x /= 5 => x = " + x);
         
         System.out.println();
     }
@@ -95,8 +98,8 @@ public class Lesson03_Operators {
         
         int num1 = 10;
         int num2 = 20;
-        
-        System.out.println("num1 = " + num1 + ", num2 = " + num2);
+
+        System.out.println("num1 = " + num1 + ", nem2 = " + num2);
         System.out.println("num1 == num2: " + (num1 == num2));  // Равно
         System.out.println("num1 != num2: " + (num1 != num2));  // Не равно
         System.out.println("num1 > num2: " + (num1 > num2));    // Больше
@@ -111,15 +114,16 @@ public class Lesson03_Operators {
     private static void learnLogicalOperators() {
         System.out.println("🧠 Логические операторы:");
         
-        boolean isRaining = true;
-        boolean hasUmbrella = false;
-        
+        boolean isRaining = false;
+        boolean hasUmbrella = true;
+
         System.out.println("isRaining = " + isRaining);
         System.out.println("hasUmbrella = " + hasUmbrella);
-        
+
         System.out.println("Дождь И зонт: " + (isRaining && hasUmbrella));      // AND (И)
         System.out.println("Дождь ИЛИ зонт: " + (isRaining || hasUmbrella));    // OR (ИЛИ)
         System.out.println("НЕ дождь: " + (!isRaining));                        // NOT (НЕ)
+
         
         // Тернарный оператор
         String advice = isRaining ? "Возьми зонт!" : "Зонт не нужен";
@@ -134,7 +138,8 @@ public class Lesson03_Operators {
     private static void learnIncrementDecrementOperators() {
         System.out.println("🎯 Инкремент и декремент:");
         
-        int counter = 5;
+        Integer counter = 5;
+        counter += ++counter;
         System.out.println("Начальное значение: " + counter);
         
         System.out.println("counter++: " + counter++); // Выведет 5
@@ -168,8 +173,7 @@ public class Lesson03_Operators {
         System.out.println("🎯 Твоя очередь! Раскомментируй задания ниже:");
         
         // ЗАДАНИЕ 1: Калькулятор ИМТ
-        /*
-        double weight = 70.0; // кг
+        double weight = 100.0; // кг
         double height = 1.75; // метры
         
         double bmi = weight / (height * height);
@@ -177,25 +181,20 @@ public class Lesson03_Operators {
         
         String category = bmi < 25.0 ? "Нормальный вес" : "Избыточный вес";
         System.out.println("Категория: " + category);
-        */
-        
+
         // ЗАДАНИЕ 2: Проверка четности
-        /*
         int number = 42;
         boolean isEven = number % 2 == 0;
         String result = isEven ? "четное" : "нечетное";
         System.out.println("Число " + number + " - " + result);
-        */
-        
+
         // ЗАДАНИЕ 3: Конвертер времени
-        /*
         int totalSeconds = 3725;
         int hours = totalSeconds / 3600;
         int minutes = (totalSeconds % 3600) / 60;
         int seconds = totalSeconds % 60;
         
         System.out.println(totalSeconds + " сек = " + hours + ":" + minutes + ":" + seconds);
-        */
     }
 }
 

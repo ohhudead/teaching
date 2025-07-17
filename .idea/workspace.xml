@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26e013b0-e75f-4bf4-939b-3be1f144a463" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/InputIntegerRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/WrongInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/rules/MaximumValueRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/rules/MoreThanZeroRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/test/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/test/TestConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/test/ZooAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson01_JVM_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson01_JVM_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson02_Variables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson02_Variables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson03_Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lessons/week01/Lesson03_Operators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Exception" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,9 +69,17 @@
   "keyToString": {
     "Application.Calculate.executor": "Debug",
     "Application.Lesson01_JVM_Basics.executor": "Run",
-    "Application.Lesson02_Variables.executor": "Run",
+    "Application.Lesson02_Variables.executor": "Coverage",
+    "Application.Lesson03_Operators.executor": "Coverage",
     "Application.Main.executor": "Run",
+    "Application.Main1.executor": "Run",
+    "Application.Square.executor": "Run",
+    "Application.TestConvert.executor": "Run",
+    "Application.ZooAccess.executor": "Run",
+    "Application.square.executor": "Run",
+    "JAR Application.teaching-1.0-SNAPSHOT.jar.executor": "Run",
     "Maven.teaching [compile].executor": "Run",
+    "Maven.teaching [install].executor": "Run",
     "Maven.teaching [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -67,27 +87,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "onboarding.tips.debug.path": "C:/Users/I Van Darkholme/IdeaProjects/teaching/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Lesson01_JVM_Basics">
-    <configuration name="Calculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.test.Calculate" />
-      <module name="teaching" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lesson01_JVM_Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Lesson03_Operators">
+    <configuration name="Lesson01_JVM_Basics" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-24" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.lessons.week01.Lesson01_JVM_Basics" />
@@ -115,7 +122,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Lesson03_Operators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lessons.week01.Lesson03_Operators" />
+      <module name="teaching" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lessons.week01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" folderName="TestConvert" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="teaching" />
       <extension name="coverage">
@@ -128,18 +148,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestConvert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.test.TestConvert" />
+      <module name="teaching" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Calculate" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Lesson03_Operators" />
+      <item itemvalue="Application.TestConvert" />
       <item itemvalue="Application.Lesson01_JVM_Basics" />
       <item itemvalue="Application.Lesson02_Variables" />
-      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lesson01_JVM_Basics" />
+        <item itemvalue="Application.Lesson03_Operators" />
         <item itemvalue="Application.Lesson02_Variables" />
-        <item itemvalue="Application.Calculate" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestConvert" />
+        <item itemvalue="Application.Lesson01_JVM_Basics" />
       </list>
     </recent_temporary>
   </component>
@@ -183,11 +218,35 @@
       <option name="project" value="LOCAL" />
       <updated>1751208433507</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init">
+      <option name="closed" value="true" />
+      <created>1751208919225</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751208919225</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init">
+      <option name="closed" value="true" />
+      <created>1751208930415</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751208930415</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/teaching$Lesson03_Operators.ic" NAME="Lesson03_Operators Coverage Results" MODIFIED="1752793147012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.lessons.week01.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/teaching$Lesson02_Variables.ic" NAME="Lesson02_Variables Coverage Results" MODIFIED="1752793122430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.lessons.week01.*</FILTER>
+    </SUITE>
   </component>
 </project>
